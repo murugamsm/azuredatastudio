@@ -429,7 +429,7 @@ export default class JupyterServerInstallation {
 			pythonBinPathSuffix);
 	}
 
-	private static getPythonExePath(pythonInstallPath: string, useExistingInstall?: boolean): string {
+	public static getPythonExePath(pythonInstallPath: string, useExistingInstall?: boolean): string {
 		return path.join(
 			pythonInstallPath,
 			!!useExistingInstall ? '' : constants.pythonBundleVersion,
